@@ -1,0 +1,344 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "young-serif-regular";
+  src: url(../fonts/YoungSerif-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "outfit-semi-bold";
+  src: url(../fonts/Outfit-SemiBold.ttf) format("truetype");
+}
+@font-face {
+  font-family: "outfit-regular";
+  src: url(../fonts/Outfit-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "outfit-bold";
+  src: url(../fonts/Outfit-Bold.ttf) format("truetype");
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+ul li {
+  padding-left: var(--space-325);
+}
+
+ol li {
+  padding-left: var(--space-200);
+}
+
+ol {
+  list-style: decimal;
+  margin-left: var(--space-100);
+}
+
+ul {
+  list-style: none;
+  margin-left: var(--space-100);
+}
+
+ul li::marker {
+  content: "•";
+  font-size: 1.25rem;
+}
+
+ol li::marker {
+  font-size: 1rem;
+}
+
+.hr-line {
+  align-self: normal;
+  background-color: var(--color-stone-150);
+  height: 1px;
+  outline: none;
+  border: none;
+}
+
+:root {
+  --color-rose-800:#7A284E;
+  --color-rose-50:#FFF7FB;
+  --color-stone-900:#312E2C;
+  --color-stone-600:#5F564D;
+  --color-stone-150:#E3DDD7;
+  --color-stone-100:#F3E5D7;
+  --color-brown-800:#854632;
+  --color-white:#FFFFFF;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  background-color: var(--color-white);
+}
+@media (min-width: 23.5em) {
+  .wrapper {
+    background-color: var(--color-stone-100);
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 23.4375rem;
+  box-sizing: border-box;
+}
+@media (min-width: 23.5em) {
+  .container {
+    gap: var(--space-500);
+    width: 38.5rem;
+    padding: var(--space-500);
+    border-radius: var(--space-300);
+    margin: 8rem 0rem;
+    background-color: var(--color-white);
+  }
+}
+@media (min-width: 48.0625em) {
+  .container {
+    width: 46rem;
+  }
+}
+
+.recipe-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-400);
+  padding: var(--space-500) var(--space-400);
+}
+@media (min-width: 23.5em) {
+  .recipe-content {
+    padding: 0em;
+  }
+}
+
+:root {
+  --space-50: 0.25em;
+  --space-75: 0.375em;
+  --space-100: 0.5em;
+  --space-150: 0.75em;
+  --space-200: 1em;
+  --space-300: 1.5em;
+  --space-325: 1.75em;
+  --space-400: 2em;
+  --space-500: 2.5em;
+  --space-600: 3em;
+  --space-1600: 8em;
+}
+
+.preset {
+  letter-spacing: 0rem;
+}
+
+.text-preset-1 {
+  line-height: 100%;
+  font-size: 2.25rem;
+  font-family: "young-serif-regular";
+}
+
+@media (min-width: 23.5em) {
+  .text-preset-1 {
+    font-size: 2.5rem;
+    line-height: 100%;
+    font-family: "young-serif-regular";
+  }
+}
+.text-preset-2 {
+  line-height: 100%;
+  font-size: 1.75rem;
+  font-family: "young-serif-regular";
+}
+
+.text-preset-3 {
+  line-height: 100%;
+  font-size: 1.25rem;
+  font-family: "outfit-semi-bold";
+}
+
+.text-preset-4 {
+  line-height: 150%;
+  font-size: 1rem;
+  font-family: "outfit-regular";
+}
+
+.text-preset-4-bold {
+  line-height: 150%;
+  font-size: 1rem;
+  font-family: "outfit-bold";
+}
+
+.recipe-image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+@media (min-width: 23.5em) {
+  .recipe-image {
+    border-radius: var(--space-150);
+  }
+}
+
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-300);
+}
+
+.hero-title {
+  color: var(--color-stone-900);
+}
+
+.hero-paragraph {
+  color: var(--color-stone-600);
+}
+
+.nutrition-section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-300);
+}
+
+.nutrition-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.table-tr {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: var(--space-150) var(--space-400) var(--space-150) var(--space-400);
+}
+
+.table-tr-first {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 0em var(--space-400) var(--space-150) var(--space-400);
+}
+
+.table-tr-last {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: var(--space-150) var(--space-400) 0em var(--space-400);
+}
+
+.nutrition-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.nutrition-title {
+  color: var(--color-brown-800);
+}
+
+.nutrition-paragraph {
+  color: var(--color-stone-600);
+}
+
+.table-tr {
+  border-bottom: var(--color-stone-150) solid 0.0625rem;
+}
+
+.table-tr-first {
+  border-bottom: var(--color-stone-150) solid 0.0625rem;
+}
+
+[data-cell=nutrient-value] {
+  color: var(--color-brown-800);
+  padding-left: var(--space-100);
+  width: 7.21875rem;
+}
+
+[data-cell=nutrient] {
+  color: var(--color-stone-600);
+}
+
+.preparation-section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-200);
+  padding: var(--space-300);
+}
+
+.preparation-ul {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-100);
+  padding-left: var(--space-50);
+}
+
+.div-recipe-preparation {
+  background-color: var(--color-rose-50);
+}
+
+.preparation-title {
+  color: var(--color-rose-800);
+}
+
+.preparation-ul {
+  color: var(--color-stone-600);
+}
+
+.preparation-ul li::marker {
+  color: var(--color-rose-800);
+}
+
+.span-preparation {
+  color: var(--color-stone-600);
+}
+
+.ingredients-section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-300);
+}
+
+.ingredients-ul {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-100);
+  padding-left: var(--space-50);
+}
+
+.ingredients-title {
+  color: var(--color-brown-800);
+}
+
+.ingredients-ul {
+  color: var(--color-stone-600);
+}
+
+.ingredients-ul li::marker {
+  color: var(--color-brown-800);
+}
+
+.instructions-section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-300);
+}
+
+.instructions-ol {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-100);
+  padding-left: var(--space-200);
+}
+
+.instructions-title {
+  color: var(--color-brown-800);
+}
+
+.instructions-ol {
+  color: var(--color-stone-600);
+}
+
+.instructions-ol li::marker {
+  color: var(--color-brown-800);
+  font-family: "outfit-bold";
+}
+
+.span-instructions {
+  color: var(--color-stone-600);
+}
+
+/*# sourceMappingURL=style.css.map */
