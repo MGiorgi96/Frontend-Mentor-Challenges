@@ -1,0 +1,47 @@
+@use '../util/' as u;
+@use '../util/functions' as f;
+
+*,
+*::before, 
+*::after {
+    box-sizing: border-box;
+}
+
+ul li {
+    padding-left:var(--space-325);
+}
+
+ol li {
+    padding-left:var(--space-200);
+}
+
+
+ol {
+    list-style:decimal;
+    margin-left:var(--space-100);
+
+}
+
+ul {
+    list-style: none; 
+    margin-left:var(--space-100);
+}
+
+ul li::marker {
+    content: "•"; 
+    font-size: u.rem(20); 
+}
+
+
+ol li::marker {
+    font-size: u.rem(16); 
+}
+
+
+.hr-line {
+    align-self: normal;
+    background-color: var(--color-stone-150);
+    height: 1px;
+    outline: none;
+    border: none;
+}
