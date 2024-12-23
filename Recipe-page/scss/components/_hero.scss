@@ -1,0 +1,29 @@
+@use '../util/' as u;
+@use '../util/functions' as f;
+
+.recipe-image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    @include u.breakpoint(medium) {     
+        border-radius: var(--space-150);    
+    }
+}
+
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    gap:var(--space-300);
+}
+
+.hero-title {
+    color: var(--color-stone-900);
+}
+
+
+.hero-paragraph {
+    color: var(--color-stone-600);
+}
+
+
+
