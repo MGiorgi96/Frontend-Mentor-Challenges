@@ -1,0 +1,14 @@
+@use 'functions' as f;
+@use 'sass:math';
+
+$breakpoints-up: (
+    'medium':f.em(376),
+    'xlarge':f.em(769),
+);
+
+@mixin breakpoint($size) {
+    @media (min-width: map-get($breakpoints-up, $size)) {
+        @content
+    }
+}
+
