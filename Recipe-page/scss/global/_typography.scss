@@ -1,0 +1,44 @@
+@use '../util/' as u;
+
+.preset {
+    letter-spacing: 0rem;
+}
+
+
+.text-preset-1 {
+    line-height: 100%;
+    font-size: u.rem(36);
+    font-family: u.$font-01;
+}
+
+@include u.breakpoint(medium) {
+    .text-preset-1 {
+        font-size: u.rem(40);
+        line-height: 100%;
+        font-family: u.$font-01;
+    }
+}
+
+.text-preset-2 {
+    line-height: 100%;
+    font-size: u.rem(28);
+    font-family: u.$font-01;
+}
+
+.text-preset-3 {
+    line-height: 100%;
+    font-size: u.rem(20);
+    font-family: u.$font-02;
+}
+
+.text-preset-4 {
+    line-height: 150%;
+    font-size: u.rem(16);
+    font-family: u.$font-03;
+}
+
+.text-preset-4-bold {
+    line-height: 150%;
+    font-size: u.rem(16);
+    font-family: u.$font-04;
+}

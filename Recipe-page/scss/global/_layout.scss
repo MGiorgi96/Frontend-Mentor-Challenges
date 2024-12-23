@@ -1,0 +1,53 @@
+@use '../util/' as u;
+@use '../util/functions' as f;
+
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-white);
+    @include u.breakpoint(medium) {
+        background-color: var(--color-stone-100);
+    }
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: u.rem(375);
+    box-sizing: border-box;
+
+    @include u.breakpoint(medium) {         
+        gap:var(--space-500);
+        width: u.rem(616);
+        padding: var(--space-500);
+        border-radius: var(--space-300);
+        margin:u.rem(128) 0rem; 
+        background-color: var(--color-white);
+    }
+
+    @include u.breakpoint(xlarge) {   
+        width: u.rem(736);
+    }
+}
+
+
+.recipe-content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-400);
+    padding: var(--space-500) var(--space-400);
+    @include u.breakpoint(medium) {
+        padding: 0em;
+    }
+}
+
+
+
+
+
+
+
+
+
+
