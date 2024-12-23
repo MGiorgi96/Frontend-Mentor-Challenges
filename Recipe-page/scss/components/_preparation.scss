@@ -1,0 +1,36 @@
+@use '../util/' as u;
+@use '../util/functions' as f;
+
+.preparation-section {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-200);
+    padding: var(--space-300);
+}
+
+.preparation-ul {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-100);
+    padding-left: var(--space-50);
+}
+
+.div-recipe-preparation {
+    background-color: var(--color-rose-50);
+}
+
+.preparation-title {
+    color: var(--color-rose-800);
+}
+
+.preparation-ul {
+    color: var(--color-stone-600);
+}
+
+.preparation-ul li::marker {
+    color: var(--color-rose-800);
+}
+
+.span-preparation {
+    color: var(--color-stone-600);
+}

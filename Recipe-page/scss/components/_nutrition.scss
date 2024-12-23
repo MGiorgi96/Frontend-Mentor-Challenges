@@ -1,0 +1,62 @@
+@use '../util/' as u;
+@use '../util/functions' as f;
+
+.nutrition-section {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-300);
+}
+
+.nutrition-table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table-tr {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding:var(--space-150) var(--space-400) var(--space-150) var(--space-400);
+}
+
+.table-tr-first {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding:0em var(--space-400) var(--space-150) var(--space-400);
+}
+
+.table-tr-last {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding:var(--space-150) var(--space-400) 0em var(--space-400);
+}
+
+.nutrition-table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.nutrition-title {
+    color: var(--color-brown-800);
+}
+
+.nutrition-paragraph {
+    color: var(--color-stone-600);
+}
+
+.table-tr {
+    border-bottom: var(--color-stone-150) solid u.rem(1);
+}
+
+.table-tr-first {
+    border-bottom: var(--color-stone-150) solid u.rem(1);
+}
+
+[data-cell="nutrient-value"] {
+    color: var(--color-brown-800);
+    padding-left:var(--space-100);
+    width: u.rem(115.5);
+}
+
+[data-cell="nutrient"] {
+    color: var(--color-stone-600);
+}
