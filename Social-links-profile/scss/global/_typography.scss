@@ -1,0 +1,22 @@
+@use '../util/' as u;
+
+.preset {
+    line-height: 150%;
+    letter-spacing: 0rem;
+}
+
+.text-preset-1 {
+    font-size: u.rem(24);
+    font-family: u.$font-01;
+}
+
+.text-preset-2 {
+    font-size: u.rem(14);
+    font-family: u.$font-02;
+
+}
+
+.text-preset-2-bold {
+    font-size: u.rem(14);
+    font-family: u.$font-03;
+}

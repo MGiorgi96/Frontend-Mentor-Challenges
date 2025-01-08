@@ -1,0 +1,10 @@
+@use '../util/functions' as f;
+
+:root {
+    --space-50: #{f.em(4)}; 
+    --space-100: #{f.em(8)}; 
+    --space-150: #{f.em(12)};
+    --space-200: #{f.em(16)};
+    --space-300: #{f.em(24)};
+    --space-500: #{f.em(40)};
+}
