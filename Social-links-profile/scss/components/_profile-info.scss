@@ -1,0 +1,20 @@
+@use '../util/' as u;
+@use '../util/functions' as f;
+
+.profile-image {
+    width: u.rem(88);
+    height: u.rem(88);
+    border-radius: u.rem(999);
+}
+
+.profile-name {
+    color: var(--color-white);
+}
+
+.profile-location {
+    color: var(--color-green);
+}
+
+.profile-info {
+    color: var(--color-white);
+}

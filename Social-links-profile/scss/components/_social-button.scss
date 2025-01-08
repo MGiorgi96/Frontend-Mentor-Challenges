@@ -1,0 +1,27 @@
+@use '../util/' as u;
+@use '../util/functions' as f;
+
+.social-button {
+    color: var(--color-white);
+    background-color: var(--color-grey-700);
+    border-radius: var(--space-100);
+    width: u.rem(279);
+    height: u.rem(45);
+    padding: var(--space-150);
+    border: none;
+    @include u.breakpoint(medium) {   
+        width: u.rem(376);
+    }
+    @include u.breakpoint(medium) {   
+        width: u.rem(304);
+    }
+}
+
+
+.social-button:hover {
+    background-color: var(--color-green);
+    color: var(--color-grey-700);
+    cursor: pointer;
+    
+}
+
