@@ -1,0 +1,6 @@
+@use '../util/' as u;
+@use '../util/functions' as f;
+
+body {
+    background-color: var(--color-slate-300);
+}
