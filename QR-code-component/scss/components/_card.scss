@@ -1,0 +1,21 @@
+@use '../util/' as u;
+@use '../util/functions' as f;
+
+.container {
+    background-color: var(--color-white);
+}
+
+.qr-card-image {
+    width: 100%;
+    border-radius: var(--space-125);
+}
+
+.qr-card-title {
+    color: var(--color-slate-900);
+    text-align: center;
+}
+
+.qr-card-text {
+    color: var(--color-slate-500);
+    text-align: center;
+}
